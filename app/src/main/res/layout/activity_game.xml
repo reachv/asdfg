@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Games.Game"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/GameNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="WordleBattle"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GameNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/annouce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Done"
+        android:textColor="@color/teal_200"
+        tools:visibility="invisible"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/annouce"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/GameNumber"
+        android:layout_marginTop="43dp"
+        android:text="Game has been completed"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="34sp"
+        android:visibility="invisible" />
+</RelativeLayout>

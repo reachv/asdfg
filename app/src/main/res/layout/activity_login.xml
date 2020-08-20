@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Parsestuff.LoginActivity">
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="0dp"
+        android:background="#000000"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textColorHint="@color/teal_200" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textColorHint="@color/teal_200" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:text="Wordle Battle"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/LoginB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Login"
+        android:textColor="@color/teal_200" />
+
+    <Button
+        android:id="@+id/RegisterB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoginB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Register"
+        android:textColor="@color/teal_200" />
+</RelativeLayout>
